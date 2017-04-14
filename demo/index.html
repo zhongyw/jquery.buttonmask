@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Button Mask Demo</title>
+    <style>
+        .btn-default{
+            width:100px;
+            border:solid 1px gray;
+        }
+    </style>
+</head>
+<body>
+
+<button class="btn-default" id="btn-submit">提交</button>
+
+<script src="../vendor/jquery-1.12.4.js"></script>
+<script src="../jquery.buttonmask.js"></script>
+
+<script>
+$(function(){
+    $("#btn-submit").buttonmask('show', {
+        text: '提交中'
+    });
+});
+</script>
+</body>
+</html>
